@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import '@fontsource-variable/geist/wght.css';
+
+@theme {
+  --font-sans: "Geist Variable", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: #1e40af;
+  /* letter-spacing: 0.5px; */
+  transition: all 0.2s ease-in-out;
+}
+
+ul li {
+  letter-spacing: 0px;
+}
