@@ -3,7 +3,7 @@ import { ArrowDownRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="w-full max-w-full h-90 flex flex-col items-center justify-center gap-10 py-20 border border-black/5 border-b-2">
+    <div className="w-full max-w-full h-auto flex flex-col items-center justify-center gap-10 py-20 border border-black/5 border-b-2">
       <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-2">
           <img
@@ -13,7 +13,7 @@ const About = () => {
           />
           <div className="text-xl font-medium">Frontend Engineer</div>
         </div>
-        <p className="w-[60%] text-md font-normal text-center leading-6 text-black/80">
+        <p className="md:w-[60%] text-md font-normal text-center leading-6 text-black/80">
           I’m a Frontend Engineer with 2+ years of experience, passionate about
           building modern, user-friendly, and scalable digital experiences. I
           combine clean code, thoughtful UI/UX, and modern technologies to turn
@@ -30,8 +30,8 @@ const About = () => {
             className="w-auto flex items-center justify-center"
           >
             <div className="w-auto h-full flex items-center justify-center gap-2">
-              <span>{social.name}</span>
-              <ArrowDownRight className="text-blue-600 -rotate-90" />
+              <span className="text-sm md:text-md">{social.name}</span>
+              <ArrowDownRight className="text-blue-600 text-sm md:text-md -rotate-90" />
             </div>
           </a>
         ))}

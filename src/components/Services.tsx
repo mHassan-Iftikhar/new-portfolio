@@ -141,11 +141,11 @@ const SERVICES = [
 
 const Services = () => {
   return (
-    <div className="w-full max-w-[70%] text-center flex flex-col gap-10 py-16 px-2.5">
+    <div className="w-full md:max-w-[70%] text-center flex flex-col gap-10 py-16 px-2.5">
         <div className="text-2xl font-medium text-black/90 tracking-tighter mb-6">
           My <span className="bg-blue-600 text-white">services</span>
         </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-6 md:gap-y-14">
         {SERVICES.map((service) => (
           <div key={service.title} className="flex flex-col items-start">
             <div className="text-blue-500 mb-4">{service.icon}</div>

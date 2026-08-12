@@ -5,7 +5,7 @@ const email = "hassaniftikharco@email.com";
 const Footer = () => {
   return (
     <footer className="w-full bg-white/80 backdrop-blur-sm border-t border-black/5">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="md:max-w-7xl mx-auto px-2.5 md:px-6 py-12">
         <div className="w-full flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
         {/* Left */}
         <div className="flex flex-col gap-4">

@@ -9,9 +9,9 @@ import Process from "./components/Process";
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen w-full max-w-full bg-white flex flex-col items-center justify-center">
+    <div className="relative min-h-screen w-full max-w-full bg-white flex flex-col items-center justify-center">
       {/* <Header /> */}
-      <div className="flex flex-col w-full max-w-[70%] border border-black/5 border-r-2 border-l-2 items-center justify-center min-h-screen">
+      <div className="flex flex-col w-full md:max-w-[70%] border border-black/5 border-r-2 border-l-2 items-center justify-center min-h-screen">
         <Hero />
         <About />
         <Work />
@@ -20,6 +20,19 @@ const App: React.FC = () => {
         <Services />
         <Footer />
       </div>
+
+      <div
+        className="
+    fixed bottom-0 left-0
+    z-99
+    w-full h-60
+    pointer-events-none
+    backdrop-blur-lg
+    bg-white/10
+    mask-[linear-gradient(to_top,black_0%,black_10%,rgba(0,0,0,0.6)_35%,rgba(0,0,0,0.2)_65%,transparent_100%)]
+    [-webkit-mask-image:linear-gradient(to_top,black_0%,black_10%,rgba(0,0,0,0.6)_35%,rgba(0,0,0,0.2)_65%,transparent_100%)]
+  "
+      />
     </div>
   );
 };

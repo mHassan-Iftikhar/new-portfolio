@@ -4,15 +4,15 @@ import CalBookingButton from "./CalBookingButton";
 
 const Hero = () => {
   return (
-    <div className="text-center w-full max-w-full h-screen flex flex-col items-center justify-start pt-8 border border-black/5 border-b-2">
+    <div className="text-center w-full max-w-full h-150 flex flex-col items-center justify-start pt-8 border border-black/5 border-b-2">
       <Header />
-      <div className="w-full max-w-[60%] h-full flex flex-col items-center justify-center gap-16">
+      <div className="w-full md:max-w-[60%] h-full flex flex-col items-center justify-center gap-16">
         {/* <div className="w-full max-w-full flex flex-col items-center justify-center gap-2">
             <img className="w-20 rounded-xl object-cover" src="./assets/hassan.png" alt="hassan-iftikhar" />
             <div className="text-xl font-medium">Frontend Engineer</div>
         </div> */}
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
-          <h1 className="text-4xl font-medium leading-13">
+          <h1 className="text-3xl md:text-4xl font-medium leading-10 md:leading-13">
             Exceptionally good-looking <br /> websites for{" "}
             <span className="bg-blue-600 text-white">
               startups and enterprises
@@ -21,9 +21,9 @@ const Hero = () => {
           {/* <p className="w-[90%] text-md font-normal leading-6 text-black/80">
             I’m a Frontend Engineer with 2+ years of experience, passionate about building modern, user-friendly, and scalable digital experiences. I combine clean code, thoughtful UI/UX, and modern technologies to turn ideas into impactful products.
           </p> */}
-          <div className="w-full max-w-[60%] flex items-center justify-center gap-4 mt-4">
+          <div className="w-full md:max-w-[60%] flex items-center justify-center gap-2 md:gap-4 mt-4">
             <CalBookingButton />
-            <button className="bg-gray-100 hover:bg-gray-200 px-4 py-1.5 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200">
+            <button className="text-sm md:text-md bg-gray-100 hover:bg-gray-200 px-4 py-1.5 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200">
               Explore my work
             </button>
           </div>

@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <div
-      className="relative w-full py-20 overflow-hidden select-none"
+      className="relative w-full h-auto py-20 overflow-hidden select-none"
       style={{
         backgroundColor: "#fafafa",
         backgroundImage: "radial-gradient(circle, #d4d4d8 1px, transparent 1px)",
@@ -40,13 +40,13 @@ export default function Projects() {
       </div>
 
       {/* marquee track, moving right -> left, sits behind the big card */}
-      <div className="relative h-75 max-w-5xl mx-auto flex items-center">
+      <div className="relative h-75 max-w-full mx-auto flex items-center">
         <div className="absolute inset-0 flex items-center overflow-hidden">
           <div className="flex gap-6 animate-[marquee_30s_linear_infinite]">
             {marqueeImages.map((p, i) => (
               <div
                 key={`${p.id}-${i}`}
-                className="w-55 h-32.5 rounded-xl overflow-hidden shadow-md border border-black/5 shrink-0 opacity-40"
+                className="w-50 h-auto md:w-55 md:h-32.5 rounded-xl overflow-hidden shadow-md border border-black/5 shrink-0 opacity-40"
               >
                 <img
                   src={p.image}
@@ -63,8 +63,8 @@ export default function Projects() {
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="relative z-20 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-black/5 bg-white cursor-pointer"
-          style={{ width: 600, height: 300 }}
+          className="relative z-20 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-black/5 bg-white cursor-pointer w-80 h-auto md:w-150 md:h-75 flex flex-col items-center justify-center transition-all duration-500 ease-out"
+          // style={{ width: 600, height: 300 }}
         >
           <img
             key={active.id}
