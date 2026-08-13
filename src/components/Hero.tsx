@@ -12,8 +12,8 @@ const Hero = () => {
             <div className="text-xl font-medium">Frontend Engineer</div>
         </div> */}
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
-          <h1 className="text-3xl md:text-4xl font-medium leading-10 md:leading-13">
-            Exceptionally good-looking <br /> websites for{" "}
+          <h1 className="sm:text-xl text-3xl md:text-4xl font-medium leading-10 md:leading-13">
+            Exceptionally good-looking <br className="md:block hidden" /> websites for{" "}
             <span className="bg-blue-600 text-white">
               startups and enterprises
             </span>

@@ -344,7 +344,7 @@ function DynamicIsland({
           }
         `}
       >
-        <span className="h-[3px] w-[3px] rounded-full bg-slate-500" />
+        <span className="h-0.75 w-0.75 rounded-full bg-slate-500" />
       </div>
 
       {/* Expanded state */}
@@ -399,8 +399,10 @@ function MobileFrame({
     <div
       className="
         relative
-        h-[260px]
-        w-[130px]
+        h-60
+        w-32.5
+        md:h-65
+        md:w-32.5
         shrink-0
         overflow-hidden
         rounded-[28px]
@@ -420,10 +422,10 @@ function MobileFrame({
       <div
         className="
           absolute
-          top-[28px]
-          right-[6px]
-          bottom-[20px]
-          left-[6px]
+          top-7
+          right-1.5
+          bottom-5
+          left-1.5
           overflow-hidden
           rounded-[20px]
           bg-white
@@ -441,7 +443,7 @@ function MobileFrame({
       <div
         className="
           absolute
-          bottom-[9px]
+          bottom-2.25
           left-1/2
           h-1
           w-10
@@ -469,8 +471,10 @@ function TabletFrame({
     <div
       className="
         relative
-        h-[220px]
-        w-[330px]
+        h-44
+        w-72
+        md:h-55
+        md:w-82.5
         shrink-0
         overflow-hidden
         rounded-[22px]
@@ -490,12 +494,12 @@ function TabletFrame({
       <div
         className="
           absolute
-          top-[12px]
-          right-[10px]
-          bottom-[12px]
-          left-[10px]
+          top-3
+          right-2.5
+          bottom-3
+          left-2.5
           overflow-hidden
-          rounded-[12px]
+          rounded-xl
           border
           border-slate-200
           bg-white
@@ -529,8 +533,10 @@ function LaptopFrame({
       <div
         className="
           relative
-          h-[190px]
-          w-[320px]
+          h-45
+          w-70
+          md:h-47.5
+          md:w-[320px]
           overflow-hidden
           rounded-t-xl
           border
@@ -557,7 +563,8 @@ function LaptopFrame({
         className="
           relative
           h-3
-          w-[360px]
+          w-80
+          md:w-90
           rounded-b-xl
           border
           border-slate-300
@@ -778,7 +785,7 @@ function StepLabel({ step }: { step: Step }) {
 export default function Process() {
   return (
     <div
-      className="w-full px-6 py-14"
+      className="w-full px-2 py-14"
       style={{
         backgroundColor: "#fafafa",
         backgroundImage:

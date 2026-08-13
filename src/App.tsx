@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full max-w-full bg-white flex flex-col items-center justify-center">
       {/* <Header /> */}
-      <div className="flex flex-col w-full md:max-w-[70%] border border-black/5 border-r-2 border-l-2 items-center justify-center min-h-screen">
+      <div className="flex flex-col w-full md:max-w-[70%] mx-2.5 border border-black/5 border-r-2 border-l-2 items-center justify-center min-h-screen">
         <Hero />
         <About />
         <Work />
