@@ -2,7 +2,7 @@ import { WORKS } from "../lib/lib";
 
 const Work = () => {
   return (
-    <div className="w-full max-w-full h-auto flex flex-col items-center justify-center py-10 border border-black/5 border-b-2 px-2.5">
+    <div id="work" className="w-full max-w-full h-auto flex flex-col items-center justify-center py-10 border border-black/5 border-b-2 px-2.5">
       <div className="max-w-full w-full flex flex-col items-center justify-center gap-6">
 
         {/* Heading */}

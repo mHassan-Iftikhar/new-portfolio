@@ -141,7 +141,7 @@ const SERVICES = [
 
 const Services = () => {
   return (
-    <div className="w-full md:max-w-[70%] text-center flex flex-col gap-10 py-16 px-2.5">
+    <div id="services" className="w-full md:max-w-[70%] text-center flex flex-col gap-10 py-16 px-2.5">
         <div className="text-2xl font-medium text-black/90 tracking-tighter mb-6">
           My <span className="bg-blue-600 text-white">services</span>
         </div>

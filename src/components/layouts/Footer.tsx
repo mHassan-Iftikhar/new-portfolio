@@ -1,10 +1,10 @@
-const linkedinUrl = "https://www.linkedin.com/in/your-profile";
-const githubUrl = "https://github.com/your-username";
-const email = "hassaniftikharco@email.com";
+const linkedinUrl = "https://www.linkedin.com/in/hassaniftikhardev";
+const githubUrl = "https://github.com/mHassan-Iftikhar";
+const email = "hassaniftikharco@gmail.com";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white/80 backdrop-blur-sm border-t border-black/5">
+    <footer id="contact" className="w-full bg-white/80 backdrop-blur-sm border-t border-black/5">
       <div className="md:max-w-7xl mx-auto px-2.5 md:px-6 py-12">
         <div className="w-full flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
         {/* Left */}

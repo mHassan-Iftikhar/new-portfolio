@@ -16,11 +16,17 @@ const Header = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:block">
           <ul className="flex items-center justify-center gap-4">
-            <li>About</li>
+            <li>
+              <a href="#about">About</a>
+            </li>
             <li className="text-blue-600">•</li>
-            <li>Work</li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
             <li className="text-blue-600">•</li>
-            <li>Services</li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
           </ul>
         </div>
 
@@ -47,9 +53,15 @@ const Header = () => {
         {menuOpen && (
           <div className="absolute top-full right-0 mt-2 w-48 rounded-xl border border-black/10 bg-white p-4 shadow-lg md:hidden">
             <ul className="flex flex-col gap-4">
-              <li>About</li>
-              <li>Work</li>
-              <li>Services</li>
+              <li>
+                <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+              </li>
+              <li>
+                <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
+              </li>
+              <li>
+                <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+              </li>
               <li>
                 <CalBookingButton />
               </li>

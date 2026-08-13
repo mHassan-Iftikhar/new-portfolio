@@ -3,7 +3,7 @@ import { ArrowDownRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="w-full max-w-full h-auto flex flex-col items-center justify-center gap-10 py-20 border border-black/5 border-b-2">
+    <div id="about" className="w-full max-w-full h-auto flex flex-col items-center justify-center gap-10 py-20 border border-black/5 border-b-2">
       <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-2">
           <img

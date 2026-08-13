@@ -4,7 +4,7 @@ import CalBookingButton from "./CalBookingButton";
 
 const Hero = () => {
   return (
-    <div className="text-center w-full max-w-full h-150 flex flex-col items-center justify-start pt-8 border border-black/5 border-b-2">
+    <div id="home" className="text-center w-full max-w-full h-150 flex flex-col items-center justify-start pt-8 border border-black/5 border-b-2">
       <Header />
       <div className="w-full md:max-w-[60%] h-full flex flex-col items-center justify-center gap-16">
         {/* <div className="w-full max-w-full flex flex-col items-center justify-center gap-2">
@@ -23,9 +23,12 @@ const Hero = () => {
           </p> */}
           <div className="w-full md:max-w-[60%] flex items-center justify-center gap-2 md:gap-4 mt-4">
             <CalBookingButton />
-            <button className="text-sm md:text-md bg-gray-100 hover:bg-gray-200 px-4 py-1.5 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200">
+            <a
+              href="#work"
+              className="text-sm md:text-md bg-gray-100 hover:bg-gray-200 px-4 py-1.5 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200"
+            >
               Explore my work
-            </button>
+            </a>
           </div>
         </div>
         <div>
