@@ -9,9 +9,9 @@ type Step = {
 };
 
 const heading = {
-  title: "A process tuned for momentum",
+  title: "A process built for momentum",
   subtitle:
-    "Design, build, polish, and stay in sync. Nothing gets lost in the handoff.",
+    "Design, build, refine, and stay aligned. Every step moves the work forward.",
 };
 
 const steps = [
@@ -28,6 +28,20 @@ const steps = [
     badgeColor: "#d97706",
     highlight: "Development",
     text: "with the latest stack and tools, performance optimized and scalable.",
+  },
+  {
+    id: 3,
+    number: 3,
+    badgeColor: "#0f766e",
+    highlight: "Optimized",
+    text: "for clarity, speed, and decisions that keep momentum strong.",
+  },
+  {
+    id: 4,
+    number: 4,
+    badgeColor: "#7c3aed",
+    highlight: "Deliver",
+    text: "with a smooth launch, hosting setup, and reliable deployment.",
   },
 ];
 
@@ -243,6 +257,54 @@ function FigmaPanel() {
           }
         }
       `}</style>
+    </div>
+  );
+}
+
+function FeaturePanel({
+  title,
+  description,
+  variant,
+}: {
+  title: string;
+  description: string;
+  variant: "optimized" | "deliver";
+}) {
+  const isOptimized = variant === "optimized";
+
+  return (
+    <div className="flex h-full w-full items-center justify-center rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      {isOptimized ? (
+        <svg
+          viewBox="0 0 24 24"
+          className="h-24 w-24 text-slate-700"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-label="Optimized bolt icon"
+        >
+          <path d="M13 2 5 13h5l-1 9 8-11h-5l2-9Z" />
+        </svg>
+      ) : (
+        <svg
+          viewBox="0 0 120 120"
+          className="h-24 w-24 text-slate-700"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-label="Hosting deployment icon"
+        >
+          <path d="M34 38 20 52l14 14" />
+          <path d="M86 38l14 14-14 14" />
+          <path d="M53 32l14 40" />
+          <rect x="16" y="78" width="88" height="18" rx="4" />
+          <path d="M30 87h60" />
+        </svg>
+      )}
     </div>
   );
 }
@@ -747,17 +809,17 @@ function DevicePanel() {
 
 function StepLabel({ step }: { step: Step }) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="mt-3 flex items-center gap-3">
       <span
         className="
           flex
-          h-6
-          w-6
+          h-10
+          w-10
           shrink-0
           items-center
           justify-center
           rounded-md
-          text-xs
+          text-sm
           font-bold
           text-white
         "
@@ -796,7 +858,7 @@ export default function Process() {
       <div className="mx-auto max-w-5xl">
         {/* Heading */}
 
-        <h2 className="mb-2 text-2xl font-bold text-slate-800">
+        <h2 className="mb-2 text-2xl font-medium text-slate-800">
           {heading.title}
         </h2>
 
@@ -806,28 +868,41 @@ export default function Process() {
 
         {/* Panels */}
 
-        <div className="mb-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {/* Figma */}
-
-          <div className="h-75">
-            <FigmaPanel />
-          </div>
-
-          {/* Devices */}
-
-          <div className="h-75">
-            <DevicePanel />
-          </div>
-        </div>
-
-        {/* Steps */}
-
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {steps.map((step) => (
-            <StepLabel
-              key={step.id}
-              step={step}
-            />
+          {[
+            {
+              step: steps[0],
+              panel: <FigmaPanel />,
+            },
+            {
+              step: steps[1],
+              panel: <DevicePanel />,
+            },
+            {
+              step: steps[2],
+              panel: (
+                <FeaturePanel
+                  title="Built for speed"
+                  description="Clear systems and streamlined execution keep the work moving without friction."
+                  variant="optimized"
+                />
+              ),
+            },
+            {
+              step: steps[3],
+              panel: (
+                <FeaturePanel
+                  title="Deliver"
+                  description=""
+                  variant="deliver"
+                />
+              ),
+            },
+          ].map(({ step, panel }) => (
+            <div key={step.id} className="flex flex-col">
+              <div className="h-75">{panel}</div>
+              <StepLabel step={step} />
+            </div>
           ))}
         </div>
       </div>

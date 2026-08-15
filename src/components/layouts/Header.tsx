@@ -5,11 +5,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-full h-auto flex items-start justify-center">
-      <div className="relative w-full max-w-95 md:max-w-[70%] h-full flex items-center justify-between border border-black/15 rounded-2xl mx-2.5 px-2 pl-6 py-2">
+    <div className="w-full md:w-auto max-w-full h-auto flex items-center justify-center">
+      <div className="relative w-full md:w-auto max-w-95 md:max-w-auto h-full flex items-center justify-between border border-black/15 rounded-2xl mx-2.5 px-6 py-2">
 
         {/* Logo */}
-        <div className="text-xl font-normal tracking-tighter hover:cursor-pointer">
+        <div className="md:hidden text-xl font-normal tracking-tighter hover:cursor-pointer">
           Hassan
         </div>
 
@@ -30,10 +30,7 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Desktop Booking */}
-        <div className="hidden md:block">
-          <CalBookingButton />
-        </div>
+        
 
         {/* Mobile + Tablet Hamburger */}
         <button
@@ -70,6 +67,10 @@ const Header = () => {
         )}
 
       </div>
+      {/* Desktop Booking */}
+        <div className="hidden md:block">
+          <CalBookingButton />
+        </div>
     </div>
   );
 };

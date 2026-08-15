@@ -13,9 +13,9 @@ const Hero = () => {
         </div> */}
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
           <h1 className="sm:text-xl text-3xl md:text-4xl font-medium leading-10 md:leading-13">
-            Exceptionally good-looking <br className="md:block hidden" /> websites for{" "}
+            Pixel-perfect experiences <br className="md:block hidden" /> for startups{" "}
             <span className="bg-blue-600 text-white">
-              startups and enterprises
+              and growing teams
             </span>
           </h1>
           {/* <p className="w-[90%] text-md font-normal leading-6 text-black/80">
@@ -25,7 +25,7 @@ const Hero = () => {
             <CalBookingButton />
             <a
               href="#work"
-              className="text-sm md:text-md bg-gray-100 hover:bg-gray-200 px-4 py-1.5 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200"
+              className="text-sm md:text-md bg-gray-100 hover:bg-gray-200 px-4 py-2 text-black rounded-xl border-2 border-gray-300 shadow-md hover:cursor-pointer transition-all duration-200"
             >
               Explore my work
             </a>

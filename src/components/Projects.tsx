@@ -33,9 +33,9 @@ export default function Projects() {
       {/* heading */}
       <div className="relative z-10 text-center px-4 mb-10">
         <h2 className="text-2xl sm:text-2xl font-medium text-slate-800 tracking-tight leading-tight">
-          We've worked with some of the
+          A few projects I've enjoyed
           <br />
-          <span className="bg-blue-600 text-white">best companies</span> around the world.
+          <span className="bg-blue-600 text-white">building,</span> from concept to launch..
         </h2>
       </div>
 
