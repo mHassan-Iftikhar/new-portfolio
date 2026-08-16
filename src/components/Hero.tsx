@@ -13,7 +13,7 @@ const Hero = () => {
         </div> */}
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-4">
           <h1 className="sm:text-xl text-3xl md:text-4xl font-medium leading-10 md:leading-13">
-            Pixel-perfect experiences <br className="md:block hidden" /> for startups{" "}
+            Pixel-perfect websites <br className="md:block hidden" /> for startups{" "}
             <span className="bg-blue-600 text-white">
               and growing teams
             </span>
