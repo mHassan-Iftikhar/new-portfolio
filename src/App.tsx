@@ -6,8 +6,20 @@ import Services from "./components/Services";
 import Footer from "./components/layouts/Footer";
 import Projects from "./components/Projects";
 import Process from "./components/Process";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 const App: React.FC = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <div className="relative min-h-screen w-full max-w-full bg-white flex flex-col items-center justify-center">
       {/* <Header /> */}
