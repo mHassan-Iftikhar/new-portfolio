@@ -50,13 +50,13 @@ const cursorPoint = {
   y: 195,
 };
 
-const avatarSrc = "/assets/hassan.png";
+const avatarSrc = "/assets/hassan.webp";
 
 const mobileImages = [
-  "/assets/image1.png",
-  "/assets/image2.png",
-  "/assets/image3.png",
-  "/assets/image4.png",
+  "/assets//works-logo/foundroo-mobile.webp",
+  "/assets/works-logo/foundroo.webp",
+  "/assets/works-logo/foundroo.webp",
+  "/assets/works-logo/foundroo.webp",
 ];
 
 /* =========================================================
@@ -68,7 +68,7 @@ function FigmaPanel() {
     <div className="relative flex h-full w-full overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
       <div className="w-27.5 shrink-0 border-r border-slate-100 bg-white px-3 py-3 text-[9px]">
         <div className="mb-3 flex items-center justify-between">
-          <span className="text-2xl font-bold text-slate-800"><img className="w-2" src="/assets/process-images/figma.png" alt="Figma Logo" /></span>
+          <span className="text-2xl font-bold text-slate-800"><img className="w-2" src="/assets/process-images/figma.webp" alt="Figma Logo" /></span>
           <span className="text-slate-300">▤</span>
         </div>
 
@@ -262,8 +262,6 @@ function FigmaPanel() {
 }
 
 function FeaturePanel({
-  title,
-  description,
   variant,
 }: {
   title: string;

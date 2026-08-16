@@ -8,7 +8,7 @@ const About = () => {
         <div className="w-full max-w-full flex flex-col items-center justify-center gap-2">
           <img
             className="w-20 rounded-xl object-cover"
-            src="./assets/hassan.png"
+            src="./assets/hassan.webp"
             alt="hassan-iftikhar"
           />
           <div className="text-xl font-medium">Frontend Engineer</div>
